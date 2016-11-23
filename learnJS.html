@@ -124,14 +124,32 @@
 // console.log(xiaoming.age());
 
 /*map高阶函数方法：array调用map方法，按照map参数中的方法进行计算*/
- function pow(x) {
-    return x * x;
+//  function pow(x) {
+//     return x * x;
+// }
+
+// var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// var a = arr.map(pow); // [1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+
+//alert(parseInt("12222"));
+
+/*闭包*/
+function count() {
+    var arr = [];
+    for (var i=1; i<=3; i++) {
+        arr.push(function () {
+            return i * i;
+        });
+    }
+    return arr;
 }
 
-var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-var a = arr.map(pow); // [1, 4, 9, 16, 25, 36, 49, 64, 81]
-
-
+var results = count();
+var f1 = results[0];
+var f2 = results[1];
+var f3 = results[2];
+alert(f3);
 </script>
 
  
