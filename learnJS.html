@@ -110,6 +110,21 @@
 // }
 // foo(10, 20, 30);
 
+/*方法的调用*/
+var xiaoming = {
+    name: '小明',
+    birth: 1990,
+    age: function () {
+        var y = new Date().getFullYear();
+        return y - this.birth;
+    }
+};
+
+console.log(xiaoming.age);// function xiaoming.age()
+console.log(xiaoming.age());
+
+ 
+
 </script>
 
  
