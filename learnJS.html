@@ -41,14 +41,30 @@
 
 
 /*console的使用*/
+// var age = 20;
+// if (age <= 18)
+//     alert('adult');
+// else
+//     console.log('age < 18'); // 添加一行日志
+// 	//console是通过google浏览器的F12调试时在控制窗口看到的信息
+//     alert('teenager'); // <- 这行语句已经不在else的控制范围了
 
-var age = 20;
-if (age <= 18)
-    alert('adult');
-else
-    console.log('age < 18'); // 添加一行日志
-	//console是通过google浏览器的F12调试时在控制窗口看到的信息
-    alert('teenager'); // <- 这行语句已经不在else的控制范围了
+/*判断浏览器是否支持ES6*/
+var m = new Map();
+var s = new Set();
+//alert('你的浏览器支持Map和Set！');
+
+var m = new Map([['Michael', 95], ['Bob', 75], ['Tracy', 85]]);
+var michael = m.get('Michael'); // 95
+alert(michael);
+//Map具有以下方法
+var m = new Map(); // 空Map
+m.set('Adam', 67); // 添加新的key-value
+m.set('Bob', 59);
+m.has('Adam'); // 是否存在key 'Adam': true
+m.get('Adam'); // 67
+m.delete('Adam'); // 删除key 'Adam'
+m.get('Adam'); // undefined
 
 </script>
 
