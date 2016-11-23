@@ -111,19 +111,26 @@
 // foo(10, 20, 30);
 
 /*方法的调用*/
-var xiaoming = {
-    name: '小明',
-    birth: 1990,
-    age: function () {
-        var y = new Date().getFullYear();
-        return y - this.birth;
-    }
-};
+// var xiaoming = {
+//     name: '小明',
+//     birth: 1990,
+//     age: function () {
+//         var y = new Date().getFullYear();
+//         return y - this.birth;
+//     }
+// };
 
-console.log(xiaoming.age);// function xiaoming.age()
-console.log(xiaoming.age());
+// console.log(xiaoming.age);// function xiaoming.age()
+// console.log(xiaoming.age());
 
- 
+/*map高阶函数方法：array调用map方法，按照map参数中的方法进行计算*/
+ function pow(x) {
+    return x * x;
+}
+
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var a = arr.map(pow); // [1, 4, 9, 16, 25, 36, 49, 64, 81]
+
 
 </script>
 
