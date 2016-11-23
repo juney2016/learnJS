@@ -20,25 +20,35 @@
 // alert(arr);
 
 /*集合数据类型*/
-var xiaoming = {
-    name: '小明',
-    birth: 1990,
-    school: 'No.1 Middle School',
-    height: 1.70,
-    weight: 65,
-    score: null
-};
-//alert(xiaoming.name);
-var props = "";  
-for(var p in xiaoming){   
-	//in 可以判断p是否是xiaoming的属性，但是注意，p即使判定是xiaoming的属性，但是未必是独有属性，判断是否为独有属性，可以使用hasOwnProperty
-    if(typeof(xiaoming[p])=="function"){   
-    }else{   
-        props += p + "=" + xiaoming[p] + ";  ";  
-    }   
-}   
-   alert(props);
+// var xiaoming = {
+//     name: '小明',
+//     birth: 1990,
+//     school: 'No.1 Middle School',
+//     height: 1.70,
+//     weight: 65,
+//     score: null
+// };
+// //alert(xiaoming.name);
+// var props = "";  
+// for(var p in xiaoming){   
+// 	//in 可以判断p是否是xiaoming的属性，但是注意，p即使判定是xiaoming的属性，但是未必是独有属性，判断是否为独有属性，可以使用hasOwnProperty
+//     if(typeof(xiaoming[p])=="function"){   
+//     }else{   
+//         props += p + "=" + xiaoming[p] + ";  ";  
+//     }   
+// }   
+//    alert(props);
 
+
+/*console的使用*/
+
+var age = 20;
+if (age <= 18)
+    alert('adult');
+else
+    console.log('age < 18'); // 添加一行日志
+	//console是通过google浏览器的F12调试时在控制窗口看到的信息
+    alert('teenager'); // <- 这行语句已经不在else的控制范围了
 
 </script>
 
