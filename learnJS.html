@@ -31,6 +31,7 @@ var xiaoming = {
 //alert(xiaoming.name);
 var props = "";  
 for(var p in xiaoming){   
+	//in 可以判断p是否是xiaoming的属性，但是注意，p即使判定是xiaoming的属性，但是未必是独有属性，判断是否为独有属性，可以使用hasOwnProperty
     if(typeof(xiaoming[p])=="function"){   
     }else{   
         props += p + "=" + xiaoming[p] + ";  ";  
